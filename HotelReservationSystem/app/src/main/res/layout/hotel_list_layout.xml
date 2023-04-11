@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/container_image"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/hotel_container_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:id="@+id/hotel_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Hotel 1"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf = "@+id/hotel_image"
+        app:layout_constraintTop_toTopOf = "@id/container_image" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Price"
+        app:layout_constraintTop_toBottomOf="@id/hotel_name_text_view"
+        app:layout_constraintStart_toEndOf="@+id/hotel_image" />
+
+    <TextView
+        android:id="@+id/availability_text_view"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Availability"
+        app:layout_constraintEnd_toEndOf="@id/container_image"
+        app:layout_constraintTop_toTopOf="@id/container_image" />
+
+
+
+    <ImageView
+        android:id="@+id/hotel_image"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:background="@drawable/h2"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft ="12dp"
+        app:layout_constraintBottom_toBottomOf = "@id/container_image"
+        app:layout_constraintStart_toStartOf = "@id/container_image"
+        app:layout_constraintTop_toTopOf = "@id/container_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
